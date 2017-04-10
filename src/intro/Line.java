@@ -18,7 +18,7 @@ public class Line {
         return "\n";
     }
 
-    public String shouldPrintAGivenNumberOfAsterisks(int givenNumber) {
+    public String printAGivenNumberOfAsterisks(int givenNumber) {
         String asteriskString = "";
 
         for (int index=0; index < givenNumber; index++){

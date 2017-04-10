@@ -34,7 +34,7 @@ public class LineTest {
     public void shouldPrintAGivenNumberOfAsterisks() throws Exception{
         Line line = new Line();
         int givenNumber = 3;
-        assertEquals("***", line.shouldPrintAGivenNumberOfAsterisks(givenNumber));
+        assertEquals("***", line.printAGivenNumberOfAsterisks(givenNumber));
     }
 
 }

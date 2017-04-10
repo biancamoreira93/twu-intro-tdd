@@ -5,7 +5,7 @@ package intro;
  */
 public class Triangle {
 
-    public String shouldPrintRightTriangle() {
+    public String printRightTriangle() {
         int givenNumber = 3;
         String triangleString = "";
         for (int firstIndex=0; firstIndex < givenNumber; firstIndex++){
@@ -17,7 +17,7 @@ public class Triangle {
         return triangleString;
     }
 
-    public String shouldPrintACenteredTriangle(int givenNumber) {
+    public String printACenteredTriangle(int givenNumber) {
         String triangleString = "";
 
         int asterisksTotalNumbers = givenNumber+(givenNumber-1);
@@ -50,7 +50,7 @@ public class Triangle {
         return triangleString;
     }
 
-    public String shouldPrintACenteredTriangleInverse(int givenNumber, boolean putAdditionalSpace) {
+    public String printACenteredTriangleInverse(int givenNumber, boolean putAdditionalSpace) {
         String triangleString = "";
 
         int asterisksTotalNumbers = givenNumber+(givenNumber-1);

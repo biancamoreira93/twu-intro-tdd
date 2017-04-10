@@ -7,7 +7,7 @@ public class Exercise {
     public boolean exerciseOnePrint(){
         String exercisePrinting = "";
         Line line = new Line();
-        exercisePrinting = line.shouldPrintAGivenNumberOfAsterisks(1);
+        exercisePrinting = line.printAGivenNumberOfAsterisks(1);
 
         if (!exercisePrinting.isEmpty() || exercisePrinting!= null){
             System.out.println("Exercício 1:\n "+ exercisePrinting + "\n----------");
