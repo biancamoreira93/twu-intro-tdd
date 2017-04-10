@@ -10,75 +10,31 @@ import static org.junit.Assert.*;
  */
 public class FizzBuzzTest {
 
+
     @Test
-    public void shouldReceiveThreeAndThenReturnTrue(){
+    public void shouldPrintFizzWhenInputIsThree(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         int givenNumber = 3;
-        boolean expectedReturn = true;
+        String expectedReturn = "1\n2\nFizz\n";
 
-        assertEquals(expectedReturn, fizzBuzz.isFizz(givenNumber));
+        assertEquals(expectedReturn, fizzBuzz.printFizzBuzz(givenNumber));
     }
 
     @Test
-    public void shouldReceiveSixAndThenReturnTrue(){
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        int givenNumber = 6;
-        boolean expectedReturn = true;
-
-        assertEquals(expectedReturn, fizzBuzz.isFizz(givenNumber));
-    }
-
-    @Test
-    public void shouldReceiveNineAndThenReturnTrue(){
-        FizzBuzz fizz = new FizzBuzz();
-        int givenNumber = 9;
-        boolean expectedReturn = true;
-
-        assertEquals(expectedReturn, fizz.isFizz(givenNumber));
-    }
-
-    @Test
-    public void shouldReceiveTenAndThenReturnFalse(){
-        FizzBuzz fizz = new FizzBuzz();
-        int givenNumber = 10;
-        boolean expectedReturn = false;
-
-        assertEquals(expectedReturn, fizz.isFizz(givenNumber));
-    }
-
-    @Test
-    public void shouldReceiveFiveAndThenReturnTrue(){
+    public void shouldPrintBuzzWhenInputIsFive(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         int givenNumber = 5;
-        boolean expectedReturn = true;
+        String expectedReturn = "1\n2\nFizz\n4\nBuzz\n";
 
-        assertEquals(expectedReturn, fizzBuzz.isBuzz(givenNumber));
+        assertEquals(expectedReturn, fizzBuzz.printFizzBuzz(givenNumber));
     }
 
     @Test
-    public void shouldReceiveTenAndThenReturnTrue(){
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        int givenNumber = 10;
-        boolean expectedReturn = true;
-
-        assertEquals(expectedReturn, fizzBuzz.isBuzz(givenNumber));
-    }
-
-    @Test
-    public void shouldReceiveFifteenAndThenReturnTrue(){
+    public void shouldPrintBuzzWhenInputIsFifteen(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         int givenNumber = 15;
-        boolean expectedReturn = true;
+        String expectedReturn = "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n";
 
-        assertEquals(expectedReturn, fizzBuzz.isBuzz(givenNumber));
-    }
-
-    @Test
-    public void shouldFizzBuzzReceiveFifteenAndThenReturnTrue(){
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        int givenNumber = 15;
-        boolean expectedReturn = true;
-
-        assertEquals(expectedReturn, fizzBuzz.isFizzBuzz(givenNumber));
+        assertEquals(expectedReturn, fizzBuzz.printFizzBuzz(givenNumber));
     }
 }
